@@ -1,31 +1,6 @@
-import React, { useState } from 'react'
+import React from 'react'
 
-interface Props{
-header:string;
-desc:string;
-style:string;
-circle:React.CSSProperties;
-clickedCircle:React.CSSProperties;
-onclick?:()=>void;
-}
-
-
-
-const Circle = ({
-  header,
-  desc,
-  style,
-  circle,
-  clickedCircle,
-  onclick,}:Props) => {
-
-    const [clickedState,setClickedState]=useState(false);
-
-const handleIsClicked=()=>{
-  setClickedState(!clickedState);
-}
-
-
+const Circle = () => {
   return (
     <div>
       
@@ -33,4 +8,4 @@ const handleIsClicked=()=>{
   )
 }
 
-export default Circle;
+export default Circle

@@ -7,6 +7,7 @@ const ZsDaNe = () => {
     <div>
      <Carousel/>
      <HeadingStart text='Зш Да Не'/>
+     
     </div>
   )
 }
