@@ -1,0 +1,78 @@
+{
+    "giftCards": [
+      {
+        "id": "1",
+        "title": "Сино Небо Маица",
+        "body": "Подарете ја оваа удобна и стилска маица во сино, идеална за секојдневни прилики или лежерни викенди.",
+        "postId": "1"
+      }
+      
+    ],
+    "profile": [
+      {
+        "firstName": "Kiril",
+        "lastName": "Popovski",
+        "email": "kirilpopovski49@gmail.com",
+        "password": "Kiril123!",
+        "repeatPassword": "Kiril123!",
+        "id": 1
+      },
+      {
+        "firstName": "Kiril",
+        "lastName": "Popovski",
+        "email": "kirilpopovski49@gmail.com",
+        "password": "Kiril123!",
+        "repeatPassword": "Kiril123!",
+        "id": 2
+      },
+      {
+        "firstName": "Kiril",
+        "lastName": "Popovski",
+        "email": "kirilpopovski49@gmail.com",
+        "password": "Kiril123!",
+        "repeatPassword": "Kiril123!",
+        "id": 3
+      }
+    ],
+    "products": [
+      {
+        "id": "1",
+        "name": "Azure Summer Tee",
+        "category": "shirt",
+        "color": "blue",
+        "size": "M",
+        "sizeDescription": "Large - Chest: 42-44 inches, Length: 30 inches. Suitable for a muscular build.",
+        "price": "$35.99",
+        "discount": "50%",
+        "material": ["Polo Cotton", "Elastane"],
+        "condition": "New",
+        "odrzuvanje": ["Machine wash", "Iron low"],
+        "tags": ["polo", "elegant", "durable"],
+        "images": [
+          "https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?q=80&w=1994&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  
+      ]
+      },
+      
+      {
+        "id": "1",
+        "name": "Weekender Duffel Bag",
+        "category": "accessory",
+        "size": "S",
+        "sizeDescription": "Large capacity, dimensions: 22 x 12 x 10 inches.",
+        "price": "$59.99",
+        "discount": "50%",
+        "color": "gray",
+        "material": ["Canvas", "Leather Accents"],
+        "condition": "New",
+        "odrzuvanje": ["Spot clean", "Do not machine wash"],
+        "tags": ["travel", "spacious", "duffel"],
+        "images": [
+          "https://unsplash.com/photos/woman-in-white-mini-skirt-JWZe-4hg9aA",
+          "https://unsplash.com/photos/woman-in-white-mini-skirt-JWZe-4hg9aA-1697477564565-2a95d76e921a?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "https://unsplash.com/photos/woman-in-white-mini-skirt-JWZe-4hg9aA"
+        ]
+      }
+    ]
+  }
+  
