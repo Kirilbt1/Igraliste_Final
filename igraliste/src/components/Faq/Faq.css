@@ -1,0 +1,14 @@
+.faq{
+  padding-left: 25px;
+  padding-right: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 48.72px;
+}
+.questions-faq{
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    margin-top: 35px;
+  
+}

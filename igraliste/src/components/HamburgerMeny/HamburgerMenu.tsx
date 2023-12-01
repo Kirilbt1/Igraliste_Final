@@ -12,7 +12,7 @@ const handleVitage=()=>{
   setVintage(!showVintage);
   setBrands(false);
   setAccesories(false);
-  console.log("Hello")
+  // console.log("Hello")
   
 }
 const handleBrands=()=>{
@@ -27,12 +27,12 @@ const handleAccesories=()=>{
 }
 
   return (
-    <div className='meny-hamburger'>
-      <div className='meny-content'>
+    <div className='hamburger-menu'>
+      <div className=''>
         <ul className='list'>
-          <li>New</li>
-          <li onClick={handleVitage}>
-            Vintage облека
+          <li className='new'>Ново</li>
+          <li onClick={handleVitage} className='vintageObleka'>
+            Vintage облека{""} 
             <img
               src="../images/downarrow.png"
               alt=""

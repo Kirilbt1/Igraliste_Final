@@ -1,4 +1,6 @@
 import React from 'react'
+import "./Questions.css";
+
 interface QaProp{
     question:string;
     answer:string;
@@ -7,9 +9,9 @@ interface QaProp{
 
 const Questions = ({question,answer}:QaProp) => {
   return (
-    <div>
-      <div>{question}</div>
-    <div>{answer}</div>
+    <div className=''>
+      <div className='question'>{question}</div>
+    <div className='answer'>{answer}</div>
     </div>
   )
 }

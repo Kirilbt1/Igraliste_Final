@@ -1,114 +1,20 @@
-.hamburger-menu-wrapper {
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    top: 40px;
-    left: 0;
-    bottom: 0;
-    width: 360px;
-    z-index: 9999;
+.hamburger-menu{
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 9999;
   height: 400vh;
-    background-color: white; 
-    z-index: 9999999;
-    transition: transform 3s ease-out; 
-     
+  background-color: white;
+  z-index: 9999999;
+  transition: transform 3s ease-out;
 }
-.hamburger-menu-wrapper .hidden{
-    transform: translateX(100%);
-}
-.hamburger-menu-wrapper .visible{
-    transform: translateX(0);
 
-}
-    
-    .hamburger-menu-content {
-      display: flex;
-      flex-direction: column;
-      width: 282px;
-      font-family: Cormorant Garamond;
-      font-size: 22px;
-    }
-      .main-list {
-        list-style-type: none;
-        padding: 0;
-      }
-        .gift-card-link{
-          text-decoration: none;
-        }
-  
-        li {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          margin-top: 16px;
-          margin-bottom: 16px;
-        }
-        .new {
-          color: var(--Black, #232221);
-          font-style: italic;
-          font-weight: 700;
-          text-decoration-line: underline;
-        }
-        .on-sale {
-          color: var(--Red-alert, #ff5b29);
-          font-family: Cormorant Garamond;
-          font-style: italic;
-          font-weight: 700;
-        }
-        .see-all {
-          display: flex;
-          justify-content: flex-start;
-          position: relative;
-          color: var(--Fancy-olive, #8a8328);
-          font-family: Cormorant Garamond;
-          font-size: 25px;
-          font-style: italic;
-          font-weight: 500;
-        }
-        .see-all::before {
-          position: absolute;
-          left: -40px;
-          content: "";
-          /* background-image: url("../../public/pictures/sparks-elements-and-symbols-isolated-on-white-background-free-vector\ 2.png"); */
-          width: 36.925px;
-          height: 36.546px;
-          flex-shrink: 0;
-        }
-  
-      .icons-list {
-        list-style-type: none;
-        padding: 0;
-      }
-       .icons-list li {
-          display: flex;
-          align-items: center;
-          margin-bottom: 13px;
-        }
-        .link-to-log-in{
-          text-decoration: none;
-        }
-        .cart {
-          margin-right: 13px;
-          border-radius: 6.242px;
-          border: 0.624px solid var(--Light-grey, #c2c2c2);
-          background: var(--Light-ribbon-pink, #fff6f6);
-          box-shadow: 0px 0px 1.87248px 0px #c2c2c2;
-          padding: 9px;
-        }
-        img {
-          margin-right: 13px;
-          border-radius: 6.242px;
-          border: 0.624px solid var(--Light-grey, #c2c2c2);
-          box-shadow: 0px 0px 1.87248px 0px #c2c2c2;
-          padding: 9px;
-        }
-        span {
-          text-align: center;
-          font-family: Cormorant Garamond;
-          font-size: 22px;
-          font-style: italic;
-          font-weight: 400;
-          line-height: 150%; 
-          letter-spacing: -0.242px;
-        }
-  
+
+
+
+
+

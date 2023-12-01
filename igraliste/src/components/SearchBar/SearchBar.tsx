@@ -22,4 +22,4 @@ const SearchBar: React.FC<SeachProps> = ({ handleArrow }) => {
   );
 };
 
-export default SearchBar
+export default SearchBar;

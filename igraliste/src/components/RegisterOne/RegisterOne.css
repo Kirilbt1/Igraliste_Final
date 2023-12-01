@@ -1,0 +1,45 @@
+.register{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: var(--Light-ribbon-pink, #FFF6F6);
+}
+.logo-pic{
+    width: 180px;
+height: 38.446px;
+flex-shrink: 0;
+margin-top: 100px;
+margin-bottom: 55px;
+}
+.registerTwo-text{
+    text-decoration: none;
+}
+.ili{
+    color: var(--Black, #232221);
+font-family: Inter;
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+.logIn{
+    color: var(--Black, #232221);
+font-family: Inter;
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+text-decoration: none;
+}
+.Logirajse{
+    color: var(--Fancy-olive, #8A8328);
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-decoration-line: underline;
+}
+.SitePrava{
+    margin-top: 200px;
+}

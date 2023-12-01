@@ -25,19 +25,19 @@ const Footer = () => {
             <ul>
               <Link
 
-               
+
                 to="/About"
               >
                 <li>За нас</li>
               </Link>
-              <Link  to="/Contact">
+              <Link to="/Contact">
                 <li>Контакт</li>
               </Link>
-              <Link  to="https://www.google.com/maps"><li>Локатор на продавницата</li></Link>
-              <Link  to="/Faq">
+              <Link to="https://www.google.com/maps"><li>Локатор на продавницата</li></Link>
+              <Link to="/Faq">
                 <li>Често поставувани прашања (FAQ)</li>
               </Link>
-              <Link  to="/Login">
+              <Link to="/Login">
                 <li>Регистрирај се / логирај се</li>
               </Link>
             </ul>
@@ -45,14 +45,14 @@ const Footer = () => {
           <div className="social-media">
             <div className="follow-us">Следи не на:</div>
             <div className="social-icon">
-              <img src="/pictures/instagram.png" alt="" />
+              <img src="../images/insta.png" alt="" />
               <span>igralishte.sk</span>
             </div>
             <div className="social-icon">
-              <img src="/pictures/tiktok.png" alt="" /> <span>igralishte.sk</span>
+              <img src="../images/tiktok.png" alt="" /> <span>igralishte.sk</span>
             </div>
           </div>
-<p>Сите права задржани © 2023 igralishtesk.mk</p>
+          <p>Сите права задржани © 2023 igralishtesk.mk</p>
 
         </div>
       </div>

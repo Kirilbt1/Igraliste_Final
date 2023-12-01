@@ -1,0 +1,21 @@
+.bg{
+    background: var(--Light-ribbon-pink, #FFF6F6);
+}
+.question{
+    color: var(--Fancy-olive, #8A8328);
+    font-family: Cormorant Infant;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 24px */
+    letter-spacing: -0.176px;
+}
+.answer{
+    color: var(--Black, #232221);
+font-family: Cormorant Garamond;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 200%; /* 32px */
+letter-spacing: -0.176px;
+}

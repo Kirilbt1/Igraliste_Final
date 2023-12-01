@@ -1,6 +1,6 @@
 import React from 'react'
 
-const BreadCrumbs = () => {
+const Slider = () => {
   return (
     <div>
       
@@ -8,4 +8,4 @@ const BreadCrumbs = () => {
   )
 }
 
-export default BreadCrumbs
+export default Slider;

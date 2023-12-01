@@ -5,6 +5,7 @@
     flex-direction: column;
     align-items: center;
     margin-bottom: 48.72px;
+
   
 }
     
@@ -28,8 +29,9 @@
       align-items: center;
       margin-top: 32.32px;
       cursor: pointer;
+      margin-bottom: 20px;
     }
-      .between {
+      .space {
         font-style: normal;
         font-size: x-large;
         color: var(--Pinc-green, #504e21);

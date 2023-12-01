@@ -5,7 +5,11 @@ const Homepage = () => {
   return (
     <div>
       <Carousel/>
-    </div>
+     
+        </div>
+       
+
+
   )
 }
 
