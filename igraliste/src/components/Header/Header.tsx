@@ -45,4 +45,4 @@ const handleArrow =()=>{
   )
 }
 
-export default Header
+export default Header;

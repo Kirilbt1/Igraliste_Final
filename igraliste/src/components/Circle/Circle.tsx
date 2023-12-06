@@ -1,21 +1,19 @@
-import React, { useState } from 'react'
-import "./Circle.css";
+import React from 'react'
 
 interface Circle{
-  textHeading:string;
-  desc:string;
-  firstStyle:React.CSSProperties;
-  newStyle:React.CSSProperties;
-  handleCircle:()=>void;
+  header:string;
+paragraph:string;
 }
 
-const Circle = ({textHeading,desc,firstStyle,newStyle,handleCircle}:Circle) => {
-  const [isClickedCircle,setIsclickedCircle]=useState(false)
-  const handleClickCircle=()=>{
-    console.log("Clicked circle");
-  }
-
+const Circle = ({header,paragraph}:Circle) => {
   return (
-    <div></div>
-  )}
-export default Circle;
+    <div className='krug'>
+      <img src="../images/dzvezda.png" alt="" />
+      <p>{header}</p>
+      <p>{paragraph}</p>
+      <img src="../images/GolemastrelkaHome.png" alt="" />
+    </div>
+  )
+}
+
+export default Circle

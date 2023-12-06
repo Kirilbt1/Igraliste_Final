@@ -9,15 +9,15 @@ import "./Contact.css";
 const Contact = () => {
   const breadcrumbs = [
     { path: "/", name: "Почетна" },
-  
+
     { path: "/Contact", name: "Контакт" },
   ];
   return (
     <div>
-        <Carousel/>
-   <HeadingStart text='Контакт'/>
-   <Breadcrumbs breadcrumbs={breadcrumbs}/>
-   <img src="https://picsum.photos/350/300?grayscale" alt="" className='firstimg' />
+      <Carousel />
+      <HeadingStart text='Контакт' />
+      <Breadcrumbs breadcrumbs={breadcrumbs} />
+      <img src="https://picsum.photos/350/300?grayscale" alt="" className='firstimg' />
       <div className="header">Игралиште Дебар Маало</div>
       <div className="desc">
         Откриј ги нашите останати модни парчиња и колекции кои ги немаме

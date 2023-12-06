@@ -1,16 +1,30 @@
-import React from 'react'
-import Carousel from '../Carousel/Carousel'
+import Carousel from "../Carousel/Carousel";
+import Circle from "../Circle/Circle";
+import "./HomePage.css";
 
-const Homepage = () => {
+
+
+
+const HomePage = () => {
+
+ 
+
   return (
-    <div>
-      <Carousel/>
-     
-        </div>
-       
+   <>
+   <Carousel/>
+   <div>
+    <img src="../images/Home1.png" alt="" />
+   <Circle header="hello" paragraph="hello"/>
+   </div>
 
 
-  )
-}
 
-export default Homepage
+   </>
+    
+
+      
+ 
+  );
+};
+
+export default HomePage;
