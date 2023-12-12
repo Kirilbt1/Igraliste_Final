@@ -1,5 +1,5 @@
 .social-btn {
-  width: 220px;
+  /* width: 220px;
   display: flex;
   height: 40px;
   justify-content: center;
@@ -9,13 +9,32 @@
   border-radius: 13px;
   margin-bottom: 1px;
   border: 3px solid var(--Ribbon-pink, #ffdbdb);
-  margin-bottom: 15px;
+  margin-bottom: 15px; */
+  display: flex;
+width: 254px;
+height: 40px;
+justify-content: center;
+align-items: center;
+gap: 8px;
+flex-shrink: 0;
+border-radius: 13px;
+border: 3px solid var(--Ribbon-pink, #FFDBDB);
+margin-bottom: 25px;
 }
-.image {
+.socialMedia {
   width: 17.5px;
   height: 17.5px;
   flex-shrink: 0;
 }
-.paragrapg-text {
+.paragrapg-text-register-one {
   text-decoration: none;
+  color: var(--Black, #232221);
+font-family: Inter;
+font-size: 15px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+align-items: center;
+margin-top: 17px;
+  
 }

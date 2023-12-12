@@ -1,11 +1,12 @@
 .firstimg {
   width: 300px;
   height: 334.167px;
-  flex-shrink: 0;
   border-radius: 6.51px;
   box-shadow: 0px 0px 1.953px 0px rgba(0, 0, 0, 0.25);
+  margin-left: 65px;
+  margin-bottom: 30px;
 }
-.header {
+.header-contact {
   color: var(--Black, #232221);
   text-align: center;
   font-family: Century;
@@ -14,9 +15,8 @@
   font-weight: 400;
   line-height: 150%; /* 33px */
   letter-spacing: -0.242px;
-  margin-bottom: 30px;
 }
-.desc {
+.desc-contact {
   color: var(--Black, #232221);
   text-align: center;
   font-family: Cormorant Garamond;
@@ -26,8 +26,10 @@
   line-height: 160%; /* 25.6px */
   letter-spacing: -0.176px;
   margin-bottom: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
-.adress {
+.address-contact {
   color: var(--Black, #232221);
   text-align: center;
   font-family: Cormorant Garamond;
@@ -37,19 +39,30 @@
   line-height: 160%; /* 25.6px */
   letter-spacing: -0.176px;
   margin-bottom: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
-.contact-phone {
-  margin-top: 30px;
-}
-.telephone {
+.telephone-number-contact {
   color: #000;
-  text-align: center;
   font-family: Cormorant Garamond;
   font-size: 22px;
   font-style: normal;
   font-weight: 500;
-  line-height: 160%; /* 35.2px */
+  line-height: 160%;
   letter-spacing: -0.242px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.telephone-contact {
+  color: #000;
+
+text-align: center;
+font-family: Cormorant Garamond;
+font-size: 22px;
+font-style: normal;
+font-weight: 700;
+line-height: 160%; /* 35.2px */
+letter-spacing: -0.242px;
 }
 .telephone-number {
   color: var(--Black, #232221);
@@ -62,28 +75,36 @@
   letter-spacing: -0.176px;
   margin-bottom: 30px;
 }
-.working-time {
+.working-time-contact{
   color: var(--Black, #232221);
   text-align: center;
   font-family: Cormorant Garamond;
-  font-size: 16px;
+  font-size: 22px;
   font-style: normal;
-  font-weight: 500;
-  line-height: 160%; /* 25.6px */
-  letter-spacing: -0.176px;
-  margin-bottom: 30px;
+  font-weight: 700;
+  line-height: 160%; /* 35.2px */
+  letter-spacing: -0.242px;
+  margin-bottom: 10px;
 }
-.working-days {
+.working-days-contact {
   color: var(--Black, #232221);
-  text-align: center;
-  font-family: Cormorant Garamond;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 160%; /* 25.6px */
-  letter-spacing: -0.176px;
+font-family: Cormorant Garamond;
+font-size: 22px;
+font-style: normal;
+font-weight: 500;
+line-height: 160%;
+letter-spacing: -0.242px;
+text-align: center;
   
 }
-.working-days-last{
-    padding-bottom: 50px;
+.working-days-last-contact{
+  color: var(--Black, #232221);
+  font-family: Cormorant Garamond;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%;
+  letter-spacing: -0.242px;
+  text-align: center;
+  margin-bottom: 50px;
 }

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import "./RegisterTwo.css";
-import { Link } from 'react-router-dom';
+import { Link, Router } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 
 interface FormData {
   name: string;
@@ -11,7 +12,7 @@ interface FormData {
 }
 
 const RegistrationTwo: React.FC = () => {
-
+  const navigate = useNavigate();
   const [formData, setFormData] = useState<FormData>({
     name: '',
     surname: '',
@@ -37,12 +38,10 @@ const RegistrationTwo: React.FC = () => {
       return;
     }
 
-    // Save data to local storage
-   
-    localStorage.setItem('formData', JSON.stringify(formData));
+    
 
 
-    // Clear the form data
+    // Cistam polinja
     setFormData({
       name: '',
       surname: '',
@@ -51,48 +50,62 @@ const RegistrationTwo: React.FC = () => {
       repeatPassword: '',
     });
 
-    // alert('Data saved successfully!');
+    alert('Napravivte najava');
+    
   };
-
+const handleNavigate=(()=>{
+  // Save data to local storage
+   
+  localStorage.setItem('formData', JSON.stringify(formData));
+  navigate("/");
+})
   return (
     <div className='register-form '>
+  <Link to="/">
       <img src="../images/Logo.png" alt="" className='logo-RegisterTwo'/>
+      </Link>
     <form onSubmit={handleSubmit}  > 
       <div>
-        <label htmlFor="name">Име:</label>
-        <input type="text" id="name" name="name" placeholder='Кирил' value={formData.name} onChange={handleChange} required />
+        <label htmlFor="name" className='register-text'>Име:</label>
+        <br />
+        <input type="text" id="name" name="name"  className='register-text-input input-text-register-two'placeholder='Кирил' value={formData.name} onChange={handleChange} required />
       </div>
       <div>
-        <label htmlFor="surname">Презиме:</label>
-        <input type="text" id="surname" name="surname" placeholder='Поповски' value={formData.surname} onChange={handleChange} required />
+        <label htmlFor="surname"  className='register-text'>Презиме:</label>
+        <br />
+        <input type="text" id="surname" name="surname"  className='register-text-input input-text-register-two 'placeholder='Поповски' value={formData.surname} onChange={handleChange} required />
       </div>
       <div>
-        <label htmlFor="email">Емаил:</label>
-        <input type="email" id="email" name="email"placeholder='example@example.com' value={formData.email} onChange={handleChange} required />
+      <label htmlFor="email"  className='register-text'>Email:</label>
+        <br />
+        <input type="email" id="email"  className='register-text-input input-text-register-two'name="email"placeholder='example@example.com' value={formData.email} onChange={handleChange} required />
       </div>
       <div>
-        <label htmlFor="password">Лозинка:</label>
-        <input type="password" id="password" name="password"placeholder='************' value={formData.password} onChange={handleChange} required />
+        <label htmlFor="password"  className='register-text'>Лозинка:</label>
+        <br />
+        <input type="password" id="password"  className='register-text-input input-text-register-two'name="password"placeholder='************' value={formData.password} onChange={handleChange} required />
       </div>
       <div>
-        <label htmlFor="repeatPassword">Повтори Лозинка:</label>
+        <label htmlFor="repeatPassword"  className='register-text'>Повтори Лозинка:</label>
         <input
           type="password"
           id="repeatPassword"
           name="repeatPassword"
           placeholder='************'
+          className='register-text-input input-text-register-two'
           value={formData.repeatPassword}
           onChange={handleChange}
           required
         />
       </div>
-      <div className='flex-paragraph'>
+      <div className='flex-paragraph-registertwo'>
       <span><img src="../images/registerTwo.png" alt="" /></span>
 
       <p>Испраќај ми известувања за нови зделки и промоции.</p>
       </div>
-      <button type="submit" className='input-submit' >
+      <button type="submit" className='input-submit-register-two' onClick={handleNavigate}>
         Регистирај се
+        
         </button>
         
      <p className='marginaBottom'>Со вашата регистрација, се согласувате со Правилата и Условите за кориснички сајтови.</p>
@@ -102,3 +115,4 @@ const RegistrationTwo: React.FC = () => {
 };
 
 export default RegistrationTwo;
+

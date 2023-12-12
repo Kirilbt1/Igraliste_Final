@@ -1,83 +1,89 @@
-// Login.tsx
 import React, { useState } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 import "./Login.css"
 import SocialMediaBtn from '../ReusableComponents/SocialMediaBtn';
-import { Link } from 'react-router-dom';
-interface LoginProps {
-  onSuccessfulLogin?: () => void;
-}
+const Login: React.FC = () => {
+  const navigate = useNavigate();
+  const [formData, setFormData] = useState({ email: '', password: '' });
+  const [error, setError] = useState('');
 
-const Login: React.FC<LoginProps> = ({ onSuccessfulLogin = () => {} }) => {
-  const [email, setUsername] = useState('');
-  const [password, setPassword] = useState('');
-  const [error, setError] = useState<string | null>(null);
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
+  };
 
   const handleLogin = (e: React.FormEvent) => {
     e.preventDefault();
 
-    // Retrieve stored username and password from localStorage
-    const storedEmail = localStorage.getItem('email');
-    const storedPassword = localStorage.getItem('password');
+    const storedUserData = JSON.parse(localStorage.getItem('formData') || '{}');
+    const { email, password } = storedUserData;
 
-    // Check if the entered username and password match the stored data
-    if (storedEmail === email && storedPassword === password) {
-      // 
-      onSuccessfulLogin();
+    if (formData.email === email && formData.password === password) {
+      // Successful login, Than go to Home Page
+      alert('Login successful');
+      navigate('/');
     } else {
-      setError('Invalid username or password');
+      setError('Погрешен пасворд');
     }
   };
 
   return (
-    <div className='login-form'>
-      <img src="../images/Logo.png" alt="" className='logo-RegisterTwo'/>
+    <div className='Login'>
+      <Link to="/">
+      <img src="../images/Logo.png" alt="" className='Logo-Login' />
+      </Link>
       <form onSubmit={handleLogin}>
-        <div>
-          <label htmlFor="email">Email:</label>
+        <div className='input-login-one'>
+          <label htmlFor="email" className='login-text' >Email адреса:</label>
+          <br />
           <input
-            type="text"
+            type="email"
             id="email"
             name="email"
-            placeholder='Enter your email'
-            value={email}
-            onChange={(e) => setUsername(e.target.value)}
+            placeholder='Email'
+            value={formData.email}
+            onChange={handleChange}
             required
           />
         </div>
         <div>
-          <label htmlFor="password">Password:</label>
+          <label htmlFor="password" className="login-text" >Лозинка:</label>
+          <br />
           <input
             type="password"
             id="password"
             name="password"
-            placeholder='************'
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
+            placeholder='**********'
+            value={formData.password}
+            onChange={handleChange}
             required
           />
         </div>
-        <p className='jaZaboravi'>Ја заборавивте Лозинката</p>
-
-        <button type="submit" className='inputSubmit'>Најависе</button>
+        <Link to="/change-password" >
+          <p className='forgot-pass-login'>Ја заборавивте лозинката ?</p></Link>
+        {error && <p style={{ color: 'red' }}>{error}</p>}
+        <button type="submit" className='input-submit-Login' >
+       Најави се  
+        
+        </button>
       </form>
-      <p>Или</p>
-      {error && <p style={{ color: 'red' }}>{error}</p>}
+      <p className='ili'>или</p>
       <SocialMediaBtn
         icon="../images/Googlepic.png"
         text="Регистрирај се преку Google"
        
       />
-    <SocialMediaBtn
-        icon="../images/Googlepic.png"
-        text="Регистрирај се преку Google"
-       
+      <SocialMediaBtn
+        icon="../images/Facebook.png"
+        text="Регистрирај се преку Facebook"
       />
-      <div className='flex-par'>
-      <p>Немаш профил?</p>
-      <Link to="/RegisterOne"> <p className='register'>Регистирај се</p></Link>
-     
-      </div>
-      <p >Сите права задржани @ Игралиште Скопје</p>
+      <p className='nemas-profil-Login'>
+        Немаш профил <Link to="/RegisterTwo"><span className='Login-registrirajse'>Регистрирај се</span></Link>
+      </p>
+      <p className="sitePrava-Login">Сите права задржани @ Игралиште Скопје</p>
     </div>
   );
 };

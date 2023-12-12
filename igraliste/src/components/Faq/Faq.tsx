@@ -4,6 +4,7 @@ import HeadingStart from '../ReusableComponents/HeadingStart'
 import Questions from './Questions'
 import Breadcrumbs from '../ReusableComponents/Breadcrums'
 import "./Faq.css";
+import SixCardsPerPage from '../ProductList/SIxCardsPerPage'
 
 
 
@@ -29,13 +30,14 @@ answer:"It has survived not only five centuries, but also the leap into electron
   ]
   const breadcrumbs = [
     { path: "/", name: "Почетна" },
-    { path: "/Faq", name: "FAQ" },
+    { path: "/Faq", name: "Често поставувани прашања" },
   ];
   return (
     <>
     <Carousel/>
+    <Breadcrumbs breadcrumbs={breadcrumbs}/>
+
       <HeadingStart text='FAQ'/>
-      <Breadcrumbs breadcrumbs={breadcrumbs}/>
     <div className='faq'>
       
       <div className='questions-faq'>
@@ -48,6 +50,7 @@ answer:"It has survived not only five centuries, but also the leap into electron
           />
         ))}
       </div>
+     
     </div>
     </>
   )

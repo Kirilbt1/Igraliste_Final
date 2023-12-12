@@ -1,0 +1,20 @@
+/* .carousel-images{
+    height: 400px;
+} */
+.slider-image{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.slider-image img{
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+}
+
+.image-carousel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 16px;
+}

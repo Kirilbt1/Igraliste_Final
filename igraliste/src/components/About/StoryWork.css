@@ -1,0 +1,32 @@
+.aboutPic{
+    width: 300px;
+height: 334.167px;
+flex-shrink: 0;
+border-radius: 6.51px;
+
+background: var(--Ribbon-pink, #FFDBDB);
+box-shadow: 0px 0px 1.953px 0px rgba(0, 0, 0, 0.25);
+margin-left: 30px;
+}
+.header-about{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: var(--Black, #232221);
+
+font-family: Century;
+font-size: 22px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%; 
+letter-spacing: -0.242px;
+}
+.text-some-about{
+    width: 400px;
+    color: var(--Black, #232221);
+font-family: Cormorant Garamond;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 200%;
+letter-spacing: -0.176px;
+}

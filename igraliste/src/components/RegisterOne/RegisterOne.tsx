@@ -5,8 +5,8 @@ import "./RegisterOne.css";
 
 const RegisterOne = () => {
   return (
-    <div className="register">
-      <img className="logo-pic" src="../images/Logo.png" alt="" />
+    <div className="registerOne">
+      <img className="logo-pic-register-one" src="../images/Logo.png" alt="" />
       <Link className="registerTwo-text" to="/RegisterTwo">
         <SocialMediaBtn text="Регистрирај се со емаил адреса"  />
       </Link>
@@ -20,13 +20,13 @@ const RegisterOne = () => {
         icon="../images/Facebook.png"
         text="Регистрирај се преку Facebook"
       />
-      <div className="logIn">
+      <div className="logIn-register-one">
         Веќе имаш профил?
         <Link to="/Login">
-          <span className='Logirajse'>Логирај се</span>
+          <span className='logirajse-register-one'>Логирај се</span>
         </Link>
       </div>
-   <p className='SitePrava'>Сите права задржани @ Игралиште Скопје</p>
+   <p className='sitePrava-register-one'>Сите права задржани @ Игралиште Скопје</p>
     </div>
   )
 }

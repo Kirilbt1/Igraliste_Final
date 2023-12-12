@@ -1,8 +1,41 @@
-.krug{
-    width: 240px;
-height: 240px;
-flex-shrink: 0;
-border-radius: 120px;
-border: 1.247px solid var(--Black, #232221);
-background: var(--Pink-gradient, linear-gradient(180deg, #FFDBDB 0.05%, #FDFDFD 93.1%, #FDFDFD 110.6%, #8A8328 152.03%));
+.cirle{
+
+}
+.dzvezda{
+  width: 49.435px;
+    height: 48.927px;
+    flex-shrink: 0;
+    mix-blend-mode: darken;
+    margin-top: 27.49px;
+    margin-bottom: -25px;
+}
+.circle-header{
+  color: var(--Black, #232221);
+  text-align: center;
+  font-family: Century;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: -0.22px;
+  width: 129px;
+  margin-top: 22px;
+  margin-bottom: 7.89px;
+}
+.circle-description{
+  width: 124.74px;
+  color: var(--Dark-grey, #666560);
+  text-align: center;
+  font-family: Cormorant Garamond;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: -0.132px;
+  margin-bottom: 12.3px;
+}
+.arrow {
+  width: 46.198px;
+  height: 15.212px;
+  flex-shrink: 0;
 }

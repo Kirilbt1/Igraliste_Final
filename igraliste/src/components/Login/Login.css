@@ -1,63 +1,77 @@
-.login-form{
-   
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background-color: var(--Light-ribbon-pink, #fff6f6);
-        position: relative;
-
+.Login {
+ display: flex;
+  align-items: center; 
+ flex-direction: column;
+  background: var(--Light-ribbon-pink, #fff6f6);
 }
 
-.inputSubmit{
-    width: 300px;
-    height: 40px;
-    border-radius: 8px;
-    border: 1px solid #a9a9a9;
-    background: rgba(196, 196, 196, 0);
-    margin-bottom: 16px;   
-    margin-top: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.Logo-Login {
+  width: 180px;
+  height: 38.446px;
+  flex-shrink: 0;
+  margin-top: 150px;
+  margin-bottom: 85px;
 
 }
-
-.jaZaboravi{
+.login-text {
+  color: #000;
+  font-family: Inter;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 10px;
+}
+.input-login-one {
+  margin-bottom: 40px;
+}
+.input-submit-Login {
+  margin-top: 60px;
+  width: 82%;
+  height: 40px;
+  border-radius: 8px;
+  border: 1px solid #a9a9a9;
+  background: rgba(196, 196, 196, 0);
+  margin-bottom: 16px;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 40px;
+  border-radius: 13px;
+  background: var(--Black, #232221);
+  color: white;
+  font-weight: bold;
+}
+.nemas-profil-Login {
+  margin-top: 30px;
+}
+.Login-registrirajse{
     color: var(--Fancy-olive, #8A8328);
-font-family: Inter;
-font-size: 12px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-text-decoration-line: underline;
-
-}
-
-.inputSubmit{
-    width: 300px;
-    height: 40px;
-    border-radius: 8px;
-    border: 1px solid #a9a9a9;
-    background: black;
-    margin-bottom: 16px;   
-    margin-top: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-
-}
-
-.flex-par{
-    display: flex;
-    
-}
-
-.register{
-    color: var(--Fancy-olive, #8A8328);
+    font-family: Inter;
+    font-size: 18px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
     text-decoration-line: underline;
+}
+.forgot-pass-login{
+    color: var(--Fancy-olive, #8A8328);
+font-family: Inter;
+font-size: 22px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+text-decoration-line: underline;
+margin-top: 20px;
 
+}
+.sitePrava-Login{
+    color: var(--Black, #232221);
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 130px; 
 }

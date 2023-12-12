@@ -1,0 +1,27 @@
+.quantity-container{
+    display: flex;
+    align-items: center;
+    margin: 16px 0px;
+   
+}
+.quantity{
+    color: var(--Black, #232221);
+    font-family: Cormorant Garamond;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 30px */
+    letter-spacing: -0.22px;
+}
+
+.buttons-plus-minus{
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    text-align: center;
+    line-height: 17px;
+    border: 0.735px solid var(--Light-grey, #c2c2c2);
+    box-shadow: 0px 0px 2.20606px 0px #c2c2c2;
+    border-radius: 50%;
+    margin: 0px 5px; 
+}

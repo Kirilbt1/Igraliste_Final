@@ -1,51 +1,14 @@
-.backgroung{
+.backgroung-register-three{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: var(--Light-ribbon-pink, #fff6f6);
-    position: relative;
+    background: var(--Light-ribbon-pink, #FFF6F6);
 }
-.center-Image-Form{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 
-}
-.marginTop{
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-.flexbuttons{
-    display: flex;
-    flex-direction: column;
-    margin-top: 20px;
-}
-.Zavrsi{
-    width: 300px;
-    height: 40px;
-    border-radius: 8px;
-    border: 1px solid #a9a9a9;
-    background: black;
-    margin-bottom: 16px;   
-    margin-top: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-}
-.Preskokni{
-    width: 300px;
-    height: 40px;
-    border-radius: 8px;
-    border: 1px solid #a9a9a9;
-    background-color: var(--Light-ribbon-pink, #fff6f6);
-
-    margin-bottom: 16px;   
-  
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* color: white; */
-    text-decoration: none;
+.logo-register-three{
+    width: 180px;
+    height: 38.446px;
+    flex-shrink: 0;
+    margin-top: 150px;
+    margin-bottom: 85px;
 }

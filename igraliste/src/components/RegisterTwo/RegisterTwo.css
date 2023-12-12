@@ -1,64 +1,83 @@
-.register-form{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: var(--Light-ribbon-pink, #fff6f6);
-    position: relative;
+.register-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--Light-ribbon-pink, #fff6f6);
 }
 
-.logo-RegisterTwo{
-    width: 180px;
-    width: 180px;
-    height: 38.446px;
-    flex-shrink: 0;
-    margin-top: 120px;
-    margin-bottom: 50px;
+.logo-RegisterTwo {
+  width: 180px;
+  height: 38.446px;
+  flex-shrink: 0;
+  margin-top: 150px;
+  margin-bottom: 85px;
 }
-form {
-    display: flex;
-    flex-direction: column;
-    font-family: Inter;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-}
-label{
-    color: #000;
-font-family: Inter;
-font-size: 12px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-display: flex;
-flex-direction: column;
-margin-bottom: 10px;
 
+.register-text {
+  margin-left: 40px;
+  color: #000;
+  font-family: Inter;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 10px;
 }
-input{
-    width: 300px;
-    height: 40px;
-    border-radius: 8px;
-    border: 1px solid #a9a9a9;
-    background: rgba(196, 196, 196, 0);
-    margin-bottom: 16px;  
+
+.register-text-input {
+  margin-left: 40px;
+  margin-bottom: 30px;
+  width: 80%;
 }
-.input-submit{
-    width: 300px;
-    height: 40px;
-    border-radius: 8px;
-    border: 1px solid #a9a9a9;
-    background: rgba(196, 196, 196, 0);
-    margin-bottom: 16px;   
-    margin-top: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+.input-text-register-two {
+  color: var(--Dark-grey, #666560);
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
-.flex-paragraph{
-    display: flex;
-    align-items: center;
+
+input {
+  width: 300px;
+  height: 40px;
+  border-radius: 8px;
+  border: 1px solid #a9a9a9;
+  background: rgba(196, 196, 196, 0);
+  margin-bottom: 16px;
 }
-.marginaBottom{
-    margin-bottom: 70px;
+
+.flex-paragraph-registertwo {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  justify-content: center;
+  margin-left: 40px;
+}
+.flex-paragraph-registertwo p {
+  margin-top: 22px;
+  margin-left: 10px;
+}
+
+.input-submit-register-two {
+  width: 250px;
+  height: 40px;
+  border-radius: 8px;
+  border: 1px solid #a9a9a9;
+  background: rgba(196, 196, 196, 0);
+  margin-bottom: 16px;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 40px;
+  border-radius: 13px;
+  background: var(--Black, #232221);
+  color: white;
+  font-weight: bold;
+}
+.marginaBottom {
+  margin-top: 130px;
+  margin-left: 40px;
 }

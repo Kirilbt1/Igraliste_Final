@@ -9,8 +9,8 @@ const SocialMediaBtn = ({icon,text}:Props) => {
   return (
     <div>
       <button className='social-btn'>
-        {icon&& <img src={icon} className='image'></img>}
-     <p className='paragrapg-text'>{text}</p>
+        {icon&& <img src={icon} className='image-socialMedia'></img>}
+     <p className='paragrapg-text-register-one'>{text}</p>
       </button>
     </div>
   )

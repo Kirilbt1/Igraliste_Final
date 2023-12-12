@@ -38,7 +38,7 @@ const HamburgerMenu = () => {
           </li>
           {showVintage && (
             <ul className="">
-              <li className="see-all"><Link to="/Product">Види ги сите</Link> </li>
+              <li className="see-all"><Link to="/product-list">Види ги сите</Link> </li>
               <li className='liststyle' >Блузи</li>
               <li className='liststyle'>Панталони</li>
               <li className='liststyle'>Здолништа/шорцеви</li>

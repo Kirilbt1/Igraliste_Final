@@ -1,45 +1,48 @@
-.register{
+.registerOne{
     display: flex;
     align-items: center;
     flex-direction: column;
     background: var(--Light-ribbon-pink, #FFF6F6);
 }
-.logo-pic{
+.logo-pic-register-one{
     width: 180px;
 height: 38.446px;
 flex-shrink: 0;
-margin-top: 100px;
-margin-bottom: 55px;
+margin-top: 150px;
+margin-bottom: 85px;
 }
 .registerTwo-text{
     text-decoration: none;
+   
 }
 .ili{
     color: var(--Black, #232221);
 font-family: Inter;
-font-size: 12px;
+font-size: 22px;
 font-style: normal;
-font-weight: 500;
+font-weight: 400;
 line-height: normal;
+margin-bottom: 30px;
 }
-.logIn{
+.logIn-register-one{
     color: var(--Black, #232221);
 font-family: Inter;
-font-size: 12px;
+font-size: 22px;
 font-style: normal;
 font-weight: 500;
 line-height: normal;
 text-decoration: none;
 }
-.Logirajse{
+.logirajse-register-one{
     color: var(--Fancy-olive, #8A8328);
     font-family: Inter;
-    font-size: 12px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
     text-decoration-line: underline;
+   
 }
-.SitePrava{
-    margin-top: 200px;
+.sitePrava-register-one{
+    margin-top: 400px;
 }
