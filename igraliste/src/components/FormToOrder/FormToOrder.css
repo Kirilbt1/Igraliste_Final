@@ -1,0 +1,14 @@
+.label-data-checkbox{
+    display: flex;
+justify-content: center;
+margin-bottom: 20px;
+align-items: center;
+}
+.label-data-order-checkbox{
+   
+}
+.otkazi-form{
+    padding-bottom: 40px;
+    margin-left: 20px;
+    color: black;
+}

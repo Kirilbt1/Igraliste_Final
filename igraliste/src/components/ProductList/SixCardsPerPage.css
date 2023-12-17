@@ -1,19 +1,27 @@
-/* Add this CSS to your stylesheet or styles section */
+/* SixCardsPerPage.css */
+
 .card-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  display: grid;
+  grid-template-columns: auto auto;
+
+
   }
   
   .card-link {
-    flex: 0 0 48%;
-    margin-bottom: 16px;
+   
+    text-decoration: none;
+    font-size: 30px;
+    text-align: center;
+     margin:8px
   }
-  
-  /* Media query for smaller screens */
-  @media (max-width: 400px) {
-    .card-link {
-      flex: 0 0 100%; /* Show one card in a row on screens with a width of 400 pixels or less */
-    }
+  .img-six{
+    display: flex;
+    color: var(--Black, #232221);
+    text-align: center;
+    font-family: Cormorant Garamond;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 19.5px */
+    letter-spacing: -0.143px;
   }
-  

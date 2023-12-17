@@ -1,36 +1,40 @@
-.pictureSome{
-    margin-top: 30px;
+.pictureSome {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
 }
-.gift-picture{
 
-        display: flex;
-        width: 270px;
-        padding: 6px 73px;
-        justify-content: center;
-        align-items: center;
-        gap: 8px;
-
+.gift-picture {
+  display: flex;
+  width: 270px;
+  padding: 6px 73px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  justify-content: center;
 }
-.GiftCards{
- 
-    color: var(--Black, #232221);
-    text-align: center;
-    font-family: Century;
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 150%; /* 33px */
-    letter-spacing: -0.242px;
 
-
+.GiftCards {
+  color: var(--Black, #232221);
+  text-align: center;
+  font-family: Century;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: -0.242px;
 }
-.text-center-h1{
-    color: var(--Black, #232221);
-    text-align: center;
-    font-family: Century;
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 150%; /* 33px */
-    letter-spacing: -0.242px;
+
+.text-center-h1 {
+  color: var(--Black, #232221);
+  text-align: center;
+  font-family: Century;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 33px */
+  letter-spacing: -0.242px;
+}
+.width-full-gift{
+  width: 100%;
 }

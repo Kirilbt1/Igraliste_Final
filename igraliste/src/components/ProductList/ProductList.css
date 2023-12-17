@@ -1,0 +1,15 @@
+
+.product-container-all{
+    display: flex;
+    width: 50%;
+    flex-direction: row;
+}
+ 
+  
+  
+/* .product-list-cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+} */

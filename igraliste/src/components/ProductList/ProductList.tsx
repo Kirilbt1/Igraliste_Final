@@ -10,12 +10,14 @@ import ProductCard from './ProductCard';
 import Pagination from './Pagination';
 import Filter from './Filter';
 import Breadcrumbs from '../ReusableComponents/Breadcrums';
+// import "./ProductList.css"
 
 interface ProductListProps {
   itemsPerPage: number;
+
 }
 
-const ProductList: React.FC<ProductListProps> = ({ itemsPerPage }) => {
+const ProductList: React.FC<ProductListProps> = ({ itemsPerPage}) => {
   const { products, loading, sortOption, setSortOption } = useProductContext();
   const [currentPage, setCurrentPage] = useState(1);
   const [filteredProducts, setFilteredProducts] = useState<Product[]>([]);
@@ -42,20 +44,26 @@ const ProductList: React.FC<ProductListProps> = ({ itemsPerPage }) => {
     { path: "/", name: "Почетна" },
     { path: "/product-list", name: "Сите" },
   ];
+  
   return (
-    <div>
+    <>
     <Breadcrumbs breadcrumbs={breadcrumbs}/>
-      <Filter sortOption={sortOption} onSortChange={setSortOption} />
+    <Filter sortOption={sortOption} onSortChange={setSortOption} />
+
+    <div className=''>
+    
       {loading ? (
         <p>Loading...</p>
       ) : (
         <>
+        <div>
           {filteredProducts.map((product) => (
             // Making clickable card
-            <Link to={`/product-details/${product.id}`} key={product.id}>
+            <Link to={`/product-details/${product.id}`} key={product.id} className=''>
               <ProductCard product={product} />
             </Link>
           ))}
+          </div>
           <Pagination
             currentPage={currentPage}
             totalPages={Math.ceil((products?.length || 1) / itemsPerPage)}
@@ -64,6 +72,7 @@ const ProductList: React.FC<ProductListProps> = ({ itemsPerPage }) => {
         </>
       )}
     </div>
+    </>
   );
 };
 

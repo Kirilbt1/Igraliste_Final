@@ -1,0 +1,22 @@
+.pagination-implementation {
+  display: flex;
+  justify-content: center;
+margin-bottom: 100px;
+}
+.no-decoration-filter {
+  width: 30.483px;
+  height: 30.483px;
+  flex-shrink: 0;
+  margin-right: 5px;
+  align-items: center;
+}
+.active{
+  color: red;
+  font-size: 30px;
+}
+.all-others{
+  font-size: 30px;
+}
+.pag-img{
+ margin-top: 8px;
+}

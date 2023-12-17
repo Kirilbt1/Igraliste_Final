@@ -1,15 +1,50 @@
-.cirle{
 
-}
-.dzvezda{
-  width: 49.435px;
+
+
+  .sparks-img {
+    width: 49.435px;
     height: 48.927px;
     flex-shrink: 0;
     mix-blend-mode: darken;
     margin-top: 27.49px;
     margin-bottom: -25px;
-}
-.circle-header{
+  }
+
+  .is-new {
+    position: relative;
+  }
+    .red-new {
+      position: absolute;
+      color: var(--Red-alert, #ff5b29);
+      text-align: center;
+      font-family: Jost;
+      font-size: 16.412px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 150%;
+      letter-spacing: -0.181px;
+      transform: rotate(-15.709deg);
+      left: -70.06px;
+      top: 9px;
+    }
+  
+
+  .vector-golden {
+    position: absolute;
+    left: -84px;
+    top: 8px;
+
+  }
+
+  .vector-golden-small {
+    position: absolute;
+    left: -38.19px;
+    top: 14px;
+  }
+
+  
+
+.circle-heading {
   color: var(--Black, #232221);
   text-align: center;
   font-family: Century;
@@ -22,7 +57,8 @@
   margin-top: 22px;
   margin-bottom: 7.89px;
 }
-.circle-description{
+
+.circle-description {
   width: 124.74px;
   color: var(--Dark-grey, #666560);
   text-align: center;
@@ -34,6 +70,7 @@
   letter-spacing: -0.132px;
   margin-bottom: 12.3px;
 }
+
 .arrow {
   width: 46.198px;
   height: 15.212px;

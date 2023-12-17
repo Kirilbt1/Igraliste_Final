@@ -1,7 +1,7 @@
 
 
 import { Route, Routes, useLocation } from "react-router-dom"
-import Homepage from "./components/HomePage/Homepage";
+import Homepage from "./components/HomePage/HomePage";
 import Login from "./components/Login/Login";
 import RegisterOne from "./components/RegisterOne/RegisterOne";
 import RegisterTwo from "./components/RegisterTwo/RegisterTwo";
@@ -20,6 +20,8 @@ import ProductList from "./components/ProductList/ProductList";
 import ProductDetails from "./components/ProductDetails/ProductDetails";
 import ChangePassword from "./components/ChangePassword/ChangePassword";
 import MyProfile from "./components/MyProfile/MyProfile";
+import Order from "./components/OrderPage/Order";
+import FormToOrder from "./components/FormToOrder/FormToOrder";
 
 
 
@@ -29,17 +31,18 @@ const App: React.FC = () => {
   const login = location.pathname === "/Login";
   const registeOne = location.pathname === "/RegisterOne";
   const registerTwo = location.pathname === "/RegisterTwo";
-  const registerThree = location.pathname === "/RegisterThree";
+  const registerThree = location.pathname === "/registerThree";
   const changePassword = location.pathname === "/change-password";
   const myProfile=location.pathname==="/myProfile";
-
+const formOrder=location.pathname==="/form-to-order"
   const HeaderAndFooter =
     !login &&
     !registeOne &&
     !registerTwo &&
     !registerThree &&
     !changePassword&&
-    !myProfile;
+    !myProfile&&
+    !formOrder;
 
 
   return (
@@ -52,8 +55,8 @@ const App: React.FC = () => {
           <Route path="/Login" element={<Login />}></Route>
           <Route path="/RegisterOne" element={<RegisterOne />}></Route>
           <Route path="/RegisterTwo" element={<RegisterTwo />}></Route>
-          <Route path="/RegisterThree" element={<RegisterThree />}></Route>
-          <Route path="/Footer" element={<Footer />}></Route>
+          <Route path="/registerThree" element={<RegisterThree />}></Route>
+
           <Route path="/About" element={<About />}></Route>
           <Route path="/Contact" element={<Contact />}></Route>
           <Route path="/Zsdane" element={<ZsDaNe />}></Route>
@@ -64,6 +67,10 @@ const App: React.FC = () => {
           <Route path="/product-details/:productId" element={<ProductDetails />} />
           <Route path="/change-password" element={<ChangePassword />} />
           <Route path="/myProfile" element={<MyProfile/>} />
+          <Route path="/Order" element={<Order/>} />
+          <Route path="/form-to-order" element={<FormToOrder/>} />
+
+
 
 
 

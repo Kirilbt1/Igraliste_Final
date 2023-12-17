@@ -33,7 +33,7 @@ const handleArrow =()=>{
           <img
             src="../images/Search.png"
             alt=""
-            // Handle seach here with css to open full
+            // Handle seach here with css to open full need to fix This
             onClick={searchClicked}
           />
         )}

@@ -81,7 +81,7 @@ const RegisterThree: React.FC = () => {
       {/* Action buttons */}
       <div className='flexbuttons'>
         <button onClick={handleFinish} className='Zavrsi'>Заврши</button>
-        <Link to="/EditForm" className='Preskokni'> Прескокни</Link>
+        <Link to="/myProfile" className='Preskokni'> Прескокни</Link>
       </div>
     </div>
   );

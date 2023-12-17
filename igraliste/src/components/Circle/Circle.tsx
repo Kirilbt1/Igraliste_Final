@@ -1,26 +1,32 @@
-import React from 'react'
-import { Link } from 'react-router-dom';
-import "./Circle.css"
-interface Circle{
-  header:string;
-desctiption:string;
-customStyle?:React.CSSProperties;
+import { useState } from "react";
+import "./Circle.css";
+
+interface CircleProps {
+  circleHeading: string;
+  circleDescription: string;
+  customCircleStyle?: React.CSSProperties; 
 }
 
-const Circle = ({header,desctiption,customStyle}:Circle) => {
+const Circle = ({
+  circleHeading,
+  circleDescription,
+
+  
+  
+}: CircleProps) => {
+  
+
   return (
-    <div className='circle' >
-      <img
-        className="dzvezda"
-        src="../images/dzvezda.png"
-        alt=""
-      />
-    
-      <div className="circle-header">{header}</div>
-      <div className="circle-description">{desctiption}</div>
-      <img className="arrow" src="../images/GolemastelkaHome.png" alt="" />
-    </div>
-  )
-}
+    <div>
+   <img src="../images/dzvezda.png" alt="" />
+      <div className="circle-heading">{circleHeading}</div>
+      <div className="circle-description">{circleDescription}</div>
+      <img className="arrow" src="pictures/arrow.png" alt="" />
+   <img src="../images/dzvezda.png" alt="" />
 
-export default Circle
+    </div>
+  );
+};
+
+export default Circle;
+

@@ -1,4 +1,4 @@
-.hamburger-menu{
+.hamburger-menu {
   display: flex;
   justify-content: center;
   position: absolute;
@@ -13,44 +13,106 @@
   transition: transform 3s ease-out;
 }
 
-.meny-content{
+.meny-content {
   display: flex;
-      flex-direction: column;
-      width: 282px;
-      font-family: Cormorant Garamond;
-      font-size: 22px;
+  flex-direction: column;
+  width: 282px;
+  font-family: Cormorant Garamond;
+  font-size: 22px;
 }
 
-.list{
+.list {
   list-style-type: none;
   padding: 0;
 }
 
-.nova{
+.nova {
   color: var(--Black, #232221);
-          font-style: italic;
-          font-weight: 700;
-          text-decoration-line: underline;
+  font-style: italic;
+  font-weight: 700;
+  text-decoration-line: underline;
 }
 
 
-.see-all{
+.see-all {
   display: flex;
-          justify-content: flex-start;
-          position: relative;
-          color: var(--Fancy-olive, #8a8328);
-          font-family: Cormorant Garamond;
-          font-size: 25px;
-          font-style: italic;
-          font-weight: 500;
-}
-.liststyle{
-  color: var(--Black, #232221);
-
+  justify-content: flex-start;
+  color: var(--Fancy-olive, #8A8328);
+text-align: center;
 font-family: Cormorant Garamond;
-font-size: 22px;
+font-size: 25px;
+font-style: italic;
+font-weight: 500;
+line-height: 150%; /* 37.5px */
+letter-spacing: -0.275px;
+list-style-type: none;
+}
+.liststyle {
+  color: var(--Black, #232221);
+text-decoration: none;
+  font-family: Cormorant Garamond;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: -0.242px;
+  list-style-type: none;
+}
+
+.main-list-hamb{
+  display: flex;
+  justify-content: space-between  ;
+  align-items: center;
+  color: var(--Black, #232221);
+text-align: center;
+font-family: Cormorant Garamond;
+font-size: 32px;
 font-style: normal;
 font-weight: 500;
+line-height: 150%; /* 33px */
+letter-spacing: -0.242px;
+}
+.main-list-hamb img{
+  width: 30px;
+}
+.podari-karticka{
+  display: flex;
+  justify-content: space-between  ;
+  align-items: center;
+  color: var(--Black, #232221);
+text-align: center;
+font-family: Cormorant Garamond;
+font-size: 32px;
+font-style: normal;
+font-weight: 500;
+line-height: 150%; 
+letter-spacing: -0.242px;
+text-decoration: none
+
+}
+.on-sale{
+  color: var(--Red-alert, #FF5B29);
+/* text-align: center; */
+font-family: Cormorant Garamond;
+font-size: 22px;
+font-style: italic;
+font-weight: 700;
+line-height: 150%; /* 33px */
+letter-spacing: -0.242px;
+margin-bottom: 100px;
+}
+.cart-nav{
+  margin-right: 20px;
+  align-items: center;
+ list-style-type: none;
+}
+.span-hamb{
+  color: var(--Black, #232221);
+text-align: center;
+font-family: Cormorant Garamond;
+font-size: 22px;
+font-style: italic;
+font-weight: 400;
 line-height: 150%; /* 33px */
 letter-spacing: -0.242px;
 }

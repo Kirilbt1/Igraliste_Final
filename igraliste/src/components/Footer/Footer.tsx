@@ -6,7 +6,7 @@ import "./Footer.css";
 const Footer = () => {
   return (
     <div>
-      <div className="footer container">
+      <div className="footer ">
         <div className="footer-container">
           <div className="footer-header">Следи ги нашите новости!</div>
           <div className="footer-txt">
@@ -22,7 +22,7 @@ const Footer = () => {
             <GoldenButton buttonText="Зачлени се!" />
           </form>
           <div className="about-section">
-            <ul>
+            <ul className='list-footer'>
               <Link
 
 

@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import "./MyProfile.css"
 import { Link } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 interface FormData {
   name: string;
   surname: string;
@@ -24,7 +25,7 @@ const MyProfile: React.FC = () => {
     password: '',
     repeatPassword: '',
   });
-
+  const navigate = useNavigate();
   const [registrationFormData, setRegistrationFormData] = useState<RegistrationFormData>({
     address: '',
     mobileNumber: '',
@@ -58,6 +59,7 @@ const MyProfile: React.FC = () => {
     localStorage.setItem('registrationFormData', JSON.stringify(registrationFormData));
 
     alert('Промените се зачувани');
+    navigate("/");
   };
 
   return (

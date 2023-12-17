@@ -49,11 +49,11 @@ const About = () => {
       <Breadcrums breadcrumbs={breadcrumbs} />
       <div className='about-us'>
         <div className='story-and-work'>
-          <span className={`story ${selected === 'story' ? 'active' : ''}`} onClick={() => handleSelect('story')}>
+          <span className={`story ${selected === 'story' ? 'color-red' : ''}`} onClick={() => handleSelect('story')}>
             Нашата приказна
           </span>
           <span className='space'>|</span>
-          <span className={`work ${selected === 'work' ? 'active' : ''}`} onClick={() => handleSelect('work')}>
+          <span className={`work ${selected === 'work' ? 'color-red' : ''}`} onClick={() => handleSelect('work')}>
             Нашата работа
           </span>
         </div>

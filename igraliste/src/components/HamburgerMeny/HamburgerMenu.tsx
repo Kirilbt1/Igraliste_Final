@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import "./HamburgerMenu.css";
 
 const HamburgerMenu = () => {
-
+const [isMenyOpen,setIsMenyOpen]=useState(false);
   const [showVintage, setVintage] = useState(false);
   const [showBrands, setBrands] = useState(false);
   const [showAccesories, setAccesories] = useState(false);
@@ -22,14 +22,14 @@ const HamburgerMenu = () => {
     setAccesories(!showAccesories);
     setBrands(false);
     setVintage(false);
-  }
+  } 
 
   return (
     <div className='hamburger-menu'>
       <div className='meny-content'>
         <ul className='list'>
           <li className='nova'>Ново</li>
-          <li onClick={handleVitage} className='vintageObleka'>
+          <li onClick={handleVitage} className='main-list-hamb'>
             Vintage облека
             <img
               src="../images/downarrow.png"
@@ -38,7 +38,7 @@ const HamburgerMenu = () => {
           </li>
           {showVintage && (
             <ul className="">
-              <li className="see-all"><Link to="/product-list">Види ги сите</Link> </li>
+              <li className="see-all"><Link to="/product-list" className='see-all'>Види ги сите</Link> </li>
               <li className='liststyle' >Блузи</li>
               <li className='liststyle'>Панталони</li>
               <li className='liststyle'>Здолништа/шорцеви</li>
@@ -47,16 +47,16 @@ const HamburgerMenu = () => {
               <li className='liststyle'>Долна облека</li>
             </ul>
           )}
-          <li onClick={handleBrands}>
-            Брендови{" "}
+          <li onClick={handleBrands} className='main-list-hamb'>
+            Брендови
             <img
               src="../images/downArrow.png"
               alt=""
             />
           </li>
           {showBrands && (
-            <ul className="dropdown-menu">
-              <li className="see-all"><Link to="/Product">Види ги сите</Link> </li>
+            <ul className="">
+              <li className="see-all"><Link to="/product-list" className='see-all'>Види ги сите</Link> </li>
               <li className='liststyle'>Pinc Partywear</li>
               <li className='liststyle'>Factory Girl</li>
               <li className='liststyle'>Main Days</li>
@@ -71,7 +71,7 @@ const HamburgerMenu = () => {
               <li className='liststyle'>Getta </li>
             </ul>
           )}
-          <li onClick={handleAccesories}>
+          <li onClick={handleAccesories} className='main-list-hamb'>
             Аксесоари
             <img
               src="../images/downArrow.png"
@@ -79,38 +79,36 @@ const HamburgerMenu = () => {
             />
           </li>
           {showAccesories && (
-            <ul className="dropdown-menu">
-              <li className="see-all"><Link to="/Product">Види ги сите</Link> </li>
-              <li>Ташни</li>
-              <li>Накит</li>
+            <ul className="">
+              <li className="see-all"><Link className='see-all' to="/product-list">Види ги сите</Link> </li>
+              <li className='liststyle'>Ташни</li>
+              <li className='liststyle'>Накит</li>
             </ul>
           )}
-          <li>Lifestyle</li>
-          <Link className="" to="/">
-            <li>Подари картичка*</li>
-          </Link>
+          <li className='main-list-hamb'>Lifestyle</li>
+          <Link to="/GiftCard">
+            <li className='podari-karticka'>Подари картичка*</li>
+            </Link>
           <li className="on-sale">Попуст</li>
         </ul>
         <ul className="icons-list">
-          <li>
-            <img className="cart" src="../images/cart.png" alt="" />
-            <span>Кошничка</span>
+          <li className="cart-nav">
+            <img className="cart-nav" src="../images/cart.png" alt="" />
+            <Link className='span-hamb' to="/Order"> Кошничка</Link>
+            {/* <span className='span-hamb'></span> */}
           </li>
-          <li>
-            <img src="../images/Heart.png" alt="" />
-            <span>Омилени</span>
+          <li className="cart-nav">
+            <img src="../images/Heart.png" alt="" className="cart-nav"/>
+            {/* <span  className='span-hamb'>Омилени</span> */}
+            <Link className='span-hamb' to="/Order"> Омилени</Link>
           </li>
-          <li>
-            <img src="../images/user.png" alt="" />
-            {/* Handle Loggin*/}
-            <Link className="link-to-log-in" to="/Login">Регистрирај се/Логирај се
-              {/* <span></span> */}
+          <li className="cart-nav">
+            <img src="../images/user.png" alt="" className="cart-nav" />
+            
+            <Link className="span-hamb" to="/Login" >Регистрирај се/  Логирај се
+            
             </Link>
-            {/* Handle Loggin*/}
-            {/* <Link className="link-to-log-in" to="/Profile">
-              <span>Мој профил</span>
-            </Link> */}
-            {/* Handle Loggin*/}
+          
           </li>
         </ul>
       </div>
@@ -119,3 +117,4 @@ const HamburgerMenu = () => {
 }
 
 export default HamburgerMenu;
+

@@ -32,7 +32,7 @@ const RegistrationTwo: React.FC = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
-    // Check if passwords match 
+  
     if (formData.password !== formData.repeatPassword) {
       alert('Passwords do not match!');
       return;
@@ -54,10 +54,10 @@ const RegistrationTwo: React.FC = () => {
     
   };
 const handleNavigate=(()=>{
-  // Save data to local storage
+
    
   localStorage.setItem('formData', JSON.stringify(formData));
-  navigate("/");
+  navigate("/registerThree");
 })
   return (
     <div className='register-form '>

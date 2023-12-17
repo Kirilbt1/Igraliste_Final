@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { Product, useProductContext } from '../Context/ProductContext';
 import ProductCard from './ProductCard';
 import Pagination from './Pagination';
+import "./SixCardsPerPage.css"
 
 interface ProductListProps {
   itemsPerPage: number;
@@ -41,7 +42,7 @@ const SixCardsPerPage: React.FC<ProductListProps> = ({ itemsPerPage }) => {
           <div className="card-container">
             {filteredProducts.map((product) => (
               // Making clickable card
-              <Link to={`/product-details/${product.id}`} key={product.id} className="card-link">
+              <Link to={`/product-details/${product.id}`} key={product.id} className="card-link img-six">
                 <ProductCard product={product} />
               </Link>
             ))}

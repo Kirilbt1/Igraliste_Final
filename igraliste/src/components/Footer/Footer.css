@@ -2,12 +2,9 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background: linear-gradient(
-      0deg,
-      #ffdbdb -52.68%,
-      #fdfdfd 68.98%,
-      #fdfdfd 91.87%
-    );
+    background-color: linear-gradient(180deg, #FFDBDB -52.68%, #FDFDFD 68.98%, #FDFDFD 91.87%);
+
+
 }
     .footer-container {
       display: flex;
@@ -70,27 +67,37 @@
         border-top: 1px solid black;
         margin-top: 62px;
       }
-        ul {
-          list-style-type: none;
-          text-align: left;
-          padding-left: 0;
-        }
+       
           .about-us-link {
             text-decoration: none;
           }
+
           li {
             margin-bottom: 10px;
           }
+
+         .list-footer{
+          padding-left: 0;
+          list-style-type: none;
+          text-align: left;
+         }
+
+         .list-footer li{
+          color: black;
+         }
         
         .link-to-log-in {
           text-decoration: none;
         }
+
         .link-to-maps {
           text-decoration: none;
         }
+
         .link-to-faq {
           text-decoration: none;
         }
+
         .contact-link {
           text-decoration: none;
         }
@@ -99,6 +106,7 @@
         text-align: left;
         border-top: 22px;
       }
+
         .follow-us {
           color: var(--Fancy-olive, #8a8328);
           font-family: Cormorant Garamond;
@@ -108,6 +116,7 @@
           line-height: 150%;
           letter-spacing: -0.22px;
         }
+
         .social-icon {
           display: flex;
           justify-content: space-between;

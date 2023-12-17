@@ -16,18 +16,18 @@
     flex-direction: column;
 }
 .slider-img{
-    width: 300px;
+    width: 80%;
     height: 400px;
     flex-shrink: 0;
 }
 .text-slider{
     color: var(--Black, #232221);
-/* text-align: center; */
+
 font-family: Cormorant Garamond;
 font-size: 22px;
 font-style: normal;
 font-weight: 400;
-line-height: 150%; /* 33px */
+line-height: 150%; 
 letter-spacing: -0.242px;
 margin-top: 10px;
 }
@@ -39,7 +39,7 @@ font-family: Cormorant Garamond;
 font-size: 22px;
 font-style: normal;
 font-weight: 500;
-line-height: 150%; /* 33px */
+line-height: 150%;
 margin-top: 10px;
 letter-spacing: -0.242px;
 }
@@ -47,8 +47,7 @@ letter-spacing: -0.242px;
 .slider-buttons{
     display: flex;
     align-items: center;
-    /* width: 31px;
-    height: 31px; */
+  
     flex-shrink: 0;
     margin-top: 20px;
     justify-content: center;

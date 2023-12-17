@@ -1,0 +1,26 @@
+.filter-head {
+  display: flex;
+  margin-bottom: 20px;
+  justify-content: space-evenly;
+}
+.button-lupa-filter {
+  width: 32px;
+  height: 23px;
+  flex-shrink: 0;
+  border-radius: 2rem;
+  border: 0.624px solid var(--Light-grey, #c2c2c2);
+  box-shadow: 0px 0px 1.872px 0px #c2c2c2;
+ 
+
+}
+.img-lupa-filter {
+  padding-bottom: 20px;
+}
+
+.filter-najnovo{
+    margin-right: 10px;
+}
+
+.select-filter{
+  border-radius: 10px;
+}

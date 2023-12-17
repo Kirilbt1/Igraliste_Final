@@ -7,9 +7,9 @@ import Carousel from '../Carousel/Carousel';
 const GiftCard = () => {
   return (
    
-    <div>
+    <div className='width-full-gift'>
        <Carousel/>
-    <h1 className='text-center-h1'>Картички за подарок</h1>
+    <h1 className='text-center-h1'>Gift Картички за подарок</h1>
      <div >
       <GiftReusable image='../images/Gift-1.png'/>
       <GiftReusable image='../images/Gift-2.png'/>
