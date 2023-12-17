@@ -12,7 +12,7 @@
         "https://picsum.photos/id/25/100/100"
       ],
       "category": "блузи",
-      "size": "XS",
+      "size": "S",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
       "color": "yellow",
       "price": 1200,
@@ -26,8 +26,8 @@
     },
     {
       "id": "2",
-      "name": "Црни тесни панталони",
-      "image": "https://picsum.photos/id/60/180/240",
+      "name": "Црни кратки панталони",
+      "image": "https://picsum.photos/id/62/180/240",
       "productImages": [
         "https://picsum.photos/id/20/300/300",
         "https://picsum.photos/id/20/300/300",
@@ -35,7 +35,7 @@
         "https://picsum.photos/id/125/200/300",
         "https://picsum.photos/id/25/200/300"
       ],
-      "category": "панталони",
+      "category": "панталони кратки",
       "size": "S",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
       "color": "black",
@@ -50,7 +50,7 @@
     },
     {
       "id": "3",
-      "name": "Сини шорцеви",
+      "name": "Зелени шорцеви",
       "image": "https://picsum.photos/id/21/180/240",
       "productImages": [
         "https://picsum.photos/id/21/200/300",
@@ -74,7 +74,7 @@
     },
     {
       "id":" 4",
-      "name": "Летен цветен фустан",
+      "name": "Летен жолт фустан",
       "image": "https://picsum.photos/id/22/180/240",
       "productImages": [
         "https://picsum.photos/id/22/200/300",
@@ -98,7 +98,7 @@
     },
     {
       "id":" 5",
-      "name": "Кожна зимска јакна",
+      "name": "Кожна  јакна",
       "image": "https://picsum.photos/id/23/180/240",
       "productImages": [
         "https://picsum.photos/id/23/200/300",
@@ -122,7 +122,7 @@
     },
     {
       "id":" 6",
-      "name": "Сиви танга гаќички",
+      "name": "Сива танга ",
       "image": "https://picsum.photos/id/24/180/240",
       "productImages": [
         "https://picsum.photos/id/24/200/300",
@@ -146,7 +146,7 @@
     },
     {
       "id":" 7",
-      "name": "Женска мала ташна",
+      "name": "Женска мала чанта",
       "category": "ташни",
       "image": "https://picsum.photos/id/25/180/240",
       "productImages": [
@@ -170,7 +170,7 @@
     },
     {
       "id":" 8",
-      "name": "Сива белезгија",
+      "name": "Сребрена белезгија",
       "category": "накит",
       "image": "https://picsum.photos/id/26/180/240",
       "productImages": [
@@ -194,7 +194,7 @@
     },
     {
       "id":" 9",
-      "name": "Црвена блуза",
+      "name": "Розева блуза",
       "category": "блузи",
       "image": "https://picsum.photos/id/27/180/240",
       "productImages": [
@@ -218,7 +218,7 @@
     },
     {
       "id": "10",
-      "name": "Црвени панталони",
+      "name": "Црни фармерки",
       "category": "панталони",
       "image": "https://picsum.photos/id/28/180/240",
       "productImages": [
@@ -242,7 +242,7 @@
     },
     {
       "id": "11",
-      "name": "Сина кратка сукња",
+      "name": "Кафеава кратка сукња",
       "category": "здолништа/шорцеви",
       "image": "https://picsum.photos/id/29/180/240",
       "productImages": [
@@ -266,7 +266,7 @@
     },
     {
       "id": "12",
-      "name": "Жолт фустан",
+      "name": "Бел фустан",
       "category": "фустани",
       "image": "https://picsum.photos/id/30/180/240",
       "productImages": [
